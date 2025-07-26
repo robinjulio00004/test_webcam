@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8"/>
+<title>WebCam resolution</title>
+<style>
+    video {
+  border:1px solid;
+}
+</style>
+<script src="webcam_resolution.js"></script>
+
+</head>
+
+<body onload="init();">
+  <h1>Set the camera resolution</h1>
+  Example adapted from:
+   <a href="https://www.simpl.info/getusermedia/constraints/">
+     https://www.simpl.info/getusermedia/constraints/
+   </a>
+   <br>
+   <p>Click a button to call <code>getUserMedia()</code> with appropriate resolution. </p>
+
+  <div id="buttons">
+    <button id="qvga">QVGA</button>
+    <button id="vga">VGA</button>
+    <button id="hd">HD</button>
+  </div>
+
+  <p id="dimensions"></p>
+
+  <video autoplay></video>
+
+  </body>
+</html>
