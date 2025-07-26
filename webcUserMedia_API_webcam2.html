@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+  <title>webUserMediaAPI Webcam2</title>
+</head>
+
+<body>
+<video id="myVideo" autoplay>Fallback msg here.</video>
+
+<script>
+	async function startWebCam() {
+      // request video and audio stream from the user's webcam
+      let stream = await navigator.mediaDevices.getUserMedia({
+         audio: true,
+         video: true
+      });
+
+      let video = document.querySelector('#myVideo');
+      video.srcObject = stream;
+      video.play();
+	}
+	startWebCam();
+</script>
+</body>
+</html>
