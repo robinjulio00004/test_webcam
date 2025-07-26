@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WebCam pixelation</title>
+  <meta charset="utf-8"/>
+  <style>
+@import "lesshat";
+  </style>
+  <script src="webcam_pixel.js"></script>
+</head>
+
+<body>
+<div id="console">
+	<svg width="22px" height="22px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		<path d="M21,35.7 C29.1185862,35.7 35.7,29.1185862 35.7,21 C35.7,12.8814138 29.1185862,6.3 21,6.3 C12.8814138,6.3 6.3,12.8814138 6.3,21 C6.3,29.1185862 12.8814138,35.7 21,35.7 Z M21,42 C9.40201968,42 0,32.5979803 0,21 C0,9.40201968 9.40201968,0 21,0 C32.5979803,0 42,9.40201968 42,21 C42,25.4717509 40.6023075,29.617053 38.22,33.0228094 L38.22,38.22 L33.0228094,38.22 C29.617053,40.6023075 25.4717509,42 21,42 Z M21,42" fill="#FFFFFF"></path>
+		<path d="M21,29.4 C16.3608079,29.4 12.6,25.6391921 12.6,21 C12.6,16.3608079 16.3608079,12.6 21,12.6 C25.6391921,12.6 29.4,16.3608079 29.4,21 C29.4,22.3143115 29.0981487,23.5581219 28.56,24.6658654 L28.56,28.56 L24.6658654,28.56 C23.5581219,29.0981487 22.3143115,29.4 21,29.4 Z M21,29.4" fill="#FFFFFF"></path>
+	</svg>
+
+	<h3>Webcam pixelation</h3>
+	<p>
+		This demo converts your webcam image into a pixelated version in real-time with adjustable parameters. If your browser supports it you may even pause and download your pixelated me!
+	</p>
+
+	<p>
+		<strong>Due to recent changes within Chromes' security settings this demo only works in "Full page" mode via SSL-Protocol.</strong>
+	</p>
+
+	<h3>Settings</h3>
+	<dl>
+		<dt>Width:</dt><dd data-setting="width:320,800,8"></dd>
+		<dt>Brightness:</dt><dd data-setting="brightness:-100,100,1"></dd>
+		<dt>Contrast:</dt><dd data-setting="contrast:0,100,1"></dd>
+		<dt>Pixel size:</dt><dd data-setting="size:4,24,1"></dd>
+		<dt>Pixel spacing:</dt><dd data-setting="space:0,10,1"></dd>
+		<dt>Pixel alpha:</dt><dd data-setting="alpha:0,100,1"></dd>
+		<dt>Pixel radius:</dt><dd data-setting="radius:0,8,1"></dd>
+	</dl>
+
+	<div class="actions">
+		<span data-pause="pause,resume">pause</span>
+		<span data-download><a href="#" download="pixelated.me.png">download</a></span>
+	</div>
+</div>
+</body>
+</html>
