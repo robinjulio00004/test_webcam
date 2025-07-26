@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WebCam snapshot</title>
+  <meta charset="utf-8"/>
+  <style>
+    canvas {
+  border:1px solid black;
+}
+  </style>
+  <script src="snapshot_webcam.js"></script>
+</head>
+
+<body onload="init();">
+  <h1>Take a snapshot of the current video stream</h1>
+  Check the CSS and JavaScript tabs. Click on the Start webcam button.
+   <p>
+  <button onclick="startWebcam();">Start webcam</button>
+  <button onclick="stopWebcam();">Stop webcam</button>
+     <button onclick="snapshot();">Take a snapshot</button>
+  </p>
+  <video onclick="snapshot(this);" width=200 height=200 id="video" controls autoplay></video>
+<p>
+
+      Snapshots: <p>
+    <canvas  id="myCanvas" width="200" height="150"></canvas>
+</body>
+</html>
+
